@@ -1,0 +1,83 @@
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #DEE5D4; /* Light green background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the dashboard */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #FEF9D9; /* Light yellow background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+  background-color: #8EACCD; /* Light blue background */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.button-group {
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #D2E0FB; /* Light blue button */
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.btn:hover {
+  background-color: #B0DAFF; /* Slightly darker blue on hover */
+}
+
+/* Main content styling */
+main {
+  padding: 20px;
+}
+
+.dashboard-content {
+  text-align: center;
+}
+
+.dashboard-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Section styling */
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #D2E0FB; /* Light blue background */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.info {
+  background: #FEF9D9; /* Light yellow background */
+}
+
+.info p {
+  margin: 10px 0;
+}

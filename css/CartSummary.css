@@ -1,0 +1,223 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FEF9D9; /* Light cream */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #8EACCD; /* Light blue-gray */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end; /* Right-align the header content */
+    align-items: center;
+}
+
+.home-button {
+    background-color: #D2E0FB; /* Light blue */
+    color: #333; /* Darker text for contrast */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-button a {
+    color: #333; /* Darker text for better visibility */
+    text-decoration: none;
+}
+
+.home-button:hover {
+    background-color: #B9E9FC; /* Slightly darker light blue */
+    color: #000; /* Darker text on hover */
+}
+
+.order-summary {
+    margin: 20px 0;
+}
+
+.order-summary h2 {
+    margin-top: 0;
+    font-family: 'Lora', serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #DEE5D4; /* Light green */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #D2E0FB; /* Light blue */
+}
+
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-controls button {
+    background-color: #8EACCD; /* Light blue-gray */
+    border: none;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: #FEF9D9; /* Light cream */
+    border: none;
+    color: #8EACCD; /* Light blue-gray */
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #E0E0E0; /* Light gray */
+}
+
+.checkout-section {
+    margin-top: 20px;
+}
+
+.checkout-section label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.checkout-section input[type="text"], .checkout-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #DEE5D4; /* Light green */
+    border-radius: 5px;
+}
+
+.place-order {
+    background-color: #8EACCD; /* Light blue-gray */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.place-order:hover {
+    background-color: #7C9AC2; /* Slightly darker blue */
+}
+
+.order-form {
+    padding: 2rem;
+    background-color: #D2E0FB; /* Light blue */
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-form.hidden {
+    display: none;
+}
+
+.order-form h2 {
+    font-family: 'Lora', serif;
+    margin-bottom: 1rem;
+    color: #333; /* Darker text color */
+}
+
+.order-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+.order-form input, .order-form textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.order-form button {
+    background-color: #8EACCD; /* Light blue-gray */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.order-form button:hover {
+    background-color: #7D9AC2; /* Slightly darker blue */
+}
+
+.success-message {
+    padding: 2rem;
+    background-color: #DEE5D4; /* Light green */
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.success-message.hidden {
+    display: none;
+}
+
+.success-message button {
+    background-color: #8EACCD; /* Light blue-gray */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.success-message button:hover {
+    background-color: #7D9AC2; /* Slightly darker blue */
+}
+
+.total-price {
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 20px;
+}

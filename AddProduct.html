@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="css/AddProduct.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Add Product</h2>
+    <form id="productForm">
+        <label for="productName">Product Name</label>
+        <input type="text" id="productName" required>
+
+        <label for="productPrice">Product Price</label>
+        <input type="number" id="productPrice" required>
+
+        <label for="productDescription">Product Description</label>
+        <textarea id="productDescription" required></textarea>
+
+        <label for="productImage">Product Image</label>
+        <input type="file" id="productImage" accept="image/*" required>
+
+        <button type="submit">Add Product</button>
+    </form>
+    <div class="message" id="message"></div>
+</div>
+
+<script>
+    document.getElementById('productForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get form values
+        const productName = document.getElementById('productName').value;
+        const productPrice = document.getElementById('productPrice').value;
+        const productDescription = document.getElementById('productDescription').value;
+        const productImage = document.getElementById('productImage').files[0];
+
+        // Create product object
+        const productData = {
+            name: productName,
+            price: productPrice,
+            description: productDescription,
+            image: URL.createObjectURL(productImage)
+        };
+
+        // Get existing products from localStorage or initialize empty array
+        let products = JSON.parse(localStorage.getItem('products')) || [];
+        products.push(productData);
+
+        // Save updated products list to localStorage
+        localStorage.setItem('products', JSON.stringify(products));
+
+        // Show success message
+        document.getElementById('message').textContent = 'Product added successfully!';
+
+        // Reset form
+        document.getElementById('productForm').reset();
+    });
+</script>
+
+</body>
+</html>

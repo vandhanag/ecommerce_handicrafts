@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Landing Page</title>
+    <link rel="stylesheet" href="css/SellerLanding.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Handicrafts E-Commerce</h1>
+            <nav>
+                <a href="LandingPage.html" class="nav-link">Home</a>
+                <a href="#about-us" class="nav-link">About Us</a>
+                <a href="#contact-us" class="nav-link">Contact Us</a>
+                <a href="BuyerLanding.html" class="nav-link">Buy</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome, Seller!</h2>
+            <p>Join our platform and start selling your unique handicrafts to a global audience. Create a profile, manage your products, and track your sales with ease.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Start?</h2>
+        <div class="cta-buttons">
+            <a href="Signup.html" class="button">Register Now</a>
+            <a href="SellerLogin.html" class="button">Login</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Why Sell With Us?</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <img src="images/feature1.png" alt="Global Reach">
+                <h3>Global Reach</h3>
+                <p>Expand your market and reach buyers around the world.</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/feature2.jpeg" alt="Easy Management">
+                <h3>Easy Management</h3>
+                <p>Manage your inventory and orders with our user-friendly interface.</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/feature3.jpeg" alt="Secure Transactions">
+                <h3>Secure Transactions</h3>
+                <p>Enjoy peace of mind with secure payment and transaction processes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="images/about-us-seller.jpg" alt="About Us Image" class="about-image">
+            <p>We are dedicated to showcasing the finest handcrafted products. Our platform helps artisans and sellers reach a wider audience while providing a secure and supportive environment for their business.</p>
+        </div>
+    </section>
+
+    <section id="contact-us" class="contact-us">
+        <h2>Contact Us</h2>
+        <form action="/submit_query" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2022 Handicrafts E-Commerce. All rights reserved.</p>
+    </footer>
+</body>
+</html>

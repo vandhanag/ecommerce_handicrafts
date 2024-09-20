@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Products</title>
+    <link rel="stylesheet" href="css/BrowseProducts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <button class="home-button">
+            <a href="LandingPage.html">Home</a>
+        </button>
+        <div class="cart-summary">
+            <p>Items: <span id="product-count">0</span> | Total: $<span id="total-cost">0.00</span></p>
+            <button class="home-button" onclick="window.location.href='CartSummary.html'">View Cart</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Browse Our Handcrafted Products</h2>
+            <p>Discover an array of unique handcrafted items perfect for any occasion.</p>
+        </div>
+        <button type="button" class = "view-addedprdt-button" onclick="window.location.href='DisplayProducts.html'">View Added Products</button>
+
+    </section>
+
+    <section class="products">
+        <h2>Our Collection</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/product1.jpg" alt="Handcrafted Vase">
+                <div class="product-info">
+                    <h3>Handcrafted Vase</h3>
+                    <p class="price">$49.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Beautifully handcrafted vase made from recycled materials. Perfect for adding a touch of elegance to any room.</p>
+                    <button class="add-to-cart" data-name="Handcrafted Vase" data-price="49.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="images/product2.jpg" alt="Wooden Sculpture">
+                <div class="product-info">
+                    <h3>Wooden Sculpture</h3>
+                    <p class="price">$79.99</p>
+                    <p class="ratings">★★★★★</p>
+                    <p>Exquisite wooden sculpture with intricate carvings. A true piece of art that adds sophistication to your space.</p>
+                    <button class="add-to-cart" data-name="Wooden Sculpture" data-price="79.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="images/product3.jpg" alt="Handwoven Rug">
+                <div class="product-info">
+                    <h3>Handwoven Rug</h3>
+                    <p class="price">$129.99</p>
+                    <p class="ratings">★★★☆☆</p>
+                    <p>Elegant handwoven rug with traditional designs. Ideal for enhancing the aesthetic appeal of your home.</p>
+                    <button class="add-to-cart" data-name="Handwoven Rug" data-price="129.99">Add to Cart</button>
+                </div>
+            </div>            
+            <div class="product-item">
+                <img src="product4.jpg" alt="Vintage Wall Clock">
+                <div class="product-info">
+                    <h3>Vintage Wall Clock</h3>
+                    <p class="price">$59.99</p>
+                    <p class="ratings">★★★☆☆</p>
+                    <p>Classic wall clock with a vintage design. Adds a touch of elegance to any room.</p>
+                    <button class="add-to-cart" data-name="Vintage Wall Clock" data-price="59.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product5.jpg" alt="Leather Sofa">
+                <div class="product-info">
+                    <h3>Leather Sofa</h3>
+                    <p class="price">$999.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Luxurious leather sofa with a contemporary design. Provides both comfort and style.</p>
+                    <button class="add-to-cart" data-name="Leather Sofa" data-price="999.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product6.jpg" alt="Glass Coffee Table">
+                <div class="product-info">
+                    <h3>Glass Coffee Table</h3>
+                    <p class="price">$149.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Elegant glass coffee table with a minimalist design. Perfect for modern living rooms.</p>
+                    <button class="add-to-cart" data-name="Glass Coffee Table" data-price="149.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product7.jpg" alt="Eco-Friendly Yoga Mat">
+                <div class="product-info">
+                    <h3>Eco-Friendly Yoga Mat</h3>
+                    <p class="price">$39.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Durable and eco-friendly yoga mat with excellent grip. Ideal for yoga and exercise.</p>
+                    <button class="add-to-cart" data-name="Eco-Friendly Yoga Mat" data-price="39.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product8.jpg" alt="Stainless Steel Water Bottle">
+                <div class="product-info">
+                    <h3>Stainless Steel Water Bottle</h3>
+                    <p class="price">$24.99</p>
+                    <p class="ratings">★★★☆☆</p>
+                    <p>Insulated stainless steel water bottle with a sleek design. Keeps drinks hot or cold for hours.</p>
+                    <button class="add-to-cart" data-name="Stainless Steel Water Bottle" data-price="24.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product9.jpg" alt="Ceramic Vase">
+                <div class="product-info">
+                    <h3>Ceramic Vase</h3>
+                    <p class="price">$39.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Beautiful ceramic vase with intricate patterns. Great for displaying flowers or as a decorative piece.</p>
+                    <button class="add-to-cart" data-name="Ceramic Vase" data-price="39.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product10.jpg" alt="Bluetooth Headphones">
+                <div class="product-info">
+                    <h3>Bluetooth Headphones</h3>
+                    <p class="price">$149.99</p>
+                    <p class="ratings">★★★★★</p>
+                    <p>High-quality Bluetooth headphones with noise cancellation and comfortable ear cushions.</p>
+                    <button class="add-to-cart" data-name="Bluetooth Headphones" data-price="149.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product11.jpg" alt="Wooden Dining Table">
+                <div class="product-info">
+                    <h3>Wooden Dining Table</h3>
+                    <p class="price">$499.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Sturdy wooden dining table with a classic design. Seats up to six people comfortably.</p>
+                    <button class="add-to-cart" data-name="Wooden Dining Table" data-price="499.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product12.jpg" alt="Adjustable Standing Desk">
+                <div class="product-info">
+                    <h3>Adjustable Standing Desk</h3>
+                    <p class="price">$349.99</p>
+                    <p class="ratings">★★★★★</p>
+                    <p>Versatile standing desk with adjustable height settings. Ideal for a healthy work environment.</p>
+                    <button class="add-to-cart" data-name="Adjustable Standing Desk" data-price="349.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product13.jpg" alt="Smart Home Thermostat">
+                <div class="product-info">
+                    <h3>Smart Home Thermostat</h3>
+                    <p class="price">$199.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Advanced thermostat with smart features for controlling home temperature remotely.</p>
+                    <button class="add-to-cart" data-name="Smart Home Thermostat" data-price="199.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product14.jpg" alt="Kitchen Mixer">
+                <div class="product-info">
+                    <h3>Kitchen Mixer</h3>
+                    <p class="price">$129.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Powerful kitchen mixer with multiple speed settings. Perfect for baking and cooking.</p>
+                    <button class="add-to-cart" data-name="Kitchen Mixer" data-price="129.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product15.jpg" alt="Luxury Bedding Set">
+                <div class="product-info">
+                    <h3>Luxury Bedding Set</h3>
+                    <p class="price">$199.99</p>
+                    <p class="ratings">★★★★★</p>
+                    <p>High-quality bedding set made from premium materials. Ensures a comfortable night's sleep.</p>
+                    <button class="add-to-cart" data-name="Luxury Bedding Set" data-price="199.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product16.jpg" alt="Digital Camera">
+                <div class="product-info">
+                    <h3>Digital Camera</h3>
+                    <p class="price">$499.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>High-resolution digital camera with advanced features for photography enthusiasts.</p>
+                    <button class="add-to-cart" data-name="Digital Camera" data-price="499.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product17.jpg" alt="Leather Briefcase">
+                <div class="product-info">
+                    <h3>Leather Briefcase</h3>
+                    <p class="price">$249.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Elegant leather briefcase with ample space for documents and essentials. Ideal for professionals.</p>
+                    <button class="add-to-cart" data-name="Leather Briefcase" data-price="249.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product18.jpg" alt="Smartphone Stand">
+                <div class="product-info">
+                    <h3>Smartphone Stand</h3>
+                    <p class="price">$19.99</p>
+                    <p class="ratings">★★★☆☆</p>
+                    <p>Convenient smartphone stand with adjustable angles. Perfect for hands-free video calls.</p>
+                    <button class="add-to-cart" data-name="Smartphone Stand" data-price="19.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product19.jpg" alt="Electric Kettle">
+                <div class="product-info">
+                    <h3>Electric Kettle</h3>
+                    <p class="price">$39.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Fast and efficient electric kettle with automatic shut-off feature. Ideal for boiling water quickly.</p>
+                    <button class="add-to-cart" data-name="Electric Kettle" data-price="39.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product20.jpg" alt="Portable Speaker">
+                <div class="product-info">
+                    <h3>Portable Speaker</h3>
+                    <p class="price">$69.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Compact and powerful portable speaker with Bluetooth connectivity. Perfect for on-the-go music.</p>
+                    <button class="add-to-cart" data-name="Portable Speaker" data-price="69.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product21.jpg" alt="Compact Air Purifier">
+                <div class="product-info">
+                    <h3>Compact Air Purifier</h3>
+                    <p class="price">$89.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Effective air purifier designed for small spaces. Helps to improve air quality and reduce allergens.</p>
+                    <button class="add-to-cart" data-name="Compact Air Purifier" data-price="89.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product22.jpg" alt="Gaming Mouse">
+                <div class="product-info">
+                    <h3>Gaming Mouse</h3>
+                    <p class="price">$49.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>High-performance gaming mouse with customizable buttons and RGB lighting. Perfect for gamers.</p>
+                    <button class="add-to-cart" data-name="Gaming Mouse" data-price="49.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product23.jpg" alt="Wall Art Canvas">
+                <div class="product-info">
+                    <h3>Wall Art Canvas</h3>
+                    <p class="price">$79.99</p>
+                    <p class="ratings">★★★☆☆</p>
+                    <p>Beautiful wall art canvas featuring modern designs. Adds a touch of creativity to your living space.</p>
+                    <button class="add-to-cart" data-name="Wall Art Canvas" data-price="79.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product24.jpg" alt="Reclining Lounge Chair">
+                <div class="product-info">
+                    <h3>Reclining Lounge Chair</h3>
+                    <p class="price">$249.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Comfortable reclining lounge chair with adjustable settings. Ideal for relaxing after a long day.</p>
+                    <button class="add-to-cart" data-name="Reclining Lounge Chair" data-price="249.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product25.jpg" alt="Smartwatch">
+                <div class="product-info">
+                    <h3>Smartwatch</h3>
+                    <p class="price">$199.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Advanced smartwatch with fitness tracking and notifications. Keeps you connected and active.</p>
+                    <button class="add-to-cart" data-name="Smartwatch" data-price="199.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product26.jpg" alt="Desk Organizer">
+                <div class="product-info">
+                    <h3>Desk Organizer</h3>
+                    <p class="price">$29.99</p>
+                    <p class="ratings">★★★☆☆</p>
+                    <p>Practical desk organizer to keep your workspace tidy and efficient. Features multiple compartments.</p>
+                    <button class="add-to-cart" data-name="Desk Organizer" data-price="29.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product27.jpg" alt="Stylish Sunglasses">
+                <div class="product-info">
+                    <h3>Stylish Sunglasses</h3>
+                    <p class="price">$39.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Fashionable sunglasses with UV protection. Perfect for sunny days and adding a stylish touch.</p>
+                    <button class="add-to-cart" data-name="Stylish Sunglasses" data-price="39.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product28.jpg" alt="Ceramic Dinner Plates">
+                <div class="product-info">
+                    <h3>Ceramic Dinner Plates</h3>
+                    <p class="price">$59.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Elegant ceramic dinner plates with a modern design. Ideal for formal dining occasions.</p>
+                    <button class="add-to-cart" data-name="Ceramic Dinner Plates" data-price="59.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product29.jpg" alt="Electric Toothbrush">
+                <div class="product-info">
+                    <h3>Electric Toothbrush</h3>
+                    <p class="price">$79.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>High-performance electric toothbrush with multiple brushing modes. Provides superior dental care.</p>
+                    <button class="add-to-cart" data-name="Electric Toothbrush" data-price="79.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product30.jpg" alt="Cooking Utensil Set">
+                <div class="product-info">
+                    <h3>Cooking Utensil Set</h3>
+                    <p class="price">$49.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Complete set of essential cooking utensils. Durable and easy to clean, perfect for any kitchen.</p>
+                    <button class="add-to-cart" data-name="Cooking Utensil Set" data-price="49.99">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="product31.jpg" alt="Smart Air Fryer">
+                <div class="product-info">
+                    <h3>Smart Air Fryer</h3>
+                    <p class="price">$129.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Advanced air fryer with smart cooking features. Cooks food quickly with less oil.</p>
+                    <button class="add-to-cart" data-name="Smart Air Fryer" data-price="129.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product32.jpg" alt="Luxury Throw Blanket">
+                <div class="product-info">
+                    <h3>Luxury Throw Blanket</h3>
+                    <p class="price">$89.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Soft and warm throw blanket made from high-quality materials. Adds comfort and style to any room.</p>
+                    <button class="add-to-cart" data-name="Luxury Throw Blanket" data-price="89.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product33.jpg" alt="Digital Photo Frame">
+                <div class="product-info">
+                    <h3>Digital Photo Frame</h3>
+                    <p class="price">$99.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Digital photo frame with high-resolution display. Perfect for showcasing your favorite memories.</p>
+                    <button class="add-to-cart" data-name="Digital Photo Frame" data-price="99.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product34.jpg" alt="Noise-Canceling Headphones">
+                <div class="product-info">
+                    <h3>Noise-Canceling Headphones</h3>
+                    <p class="price">$179.99</p>
+                    <p class="ratings">★★★★★</p>
+                    <p>Premium noise-canceling headphones with superior sound quality. Ideal for a peaceful listening experience.</p>
+                    <button class="add-to-cart" data-name="Noise-Canceling Headphones" data-price="179.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <img src="product35.jpg" alt="Outdoor Grill">
+                <div class="product-info">
+                    <h3>Outdoor Grill</h3>
+                    <p class="price">$349.99</p>
+                    <p class="ratings">★★★★☆</p>
+                    <p>Durable outdoor grill with multiple burners. Perfect for grilling delicious meals in your backyard.</p>
+                    <button class="add-to-cart" data-name="Outdoor Grill" data-price="349.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Add more product items as needed -->
+        </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/9.x/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x/firebase-firestore.js"></script>
+    <script>
+        // Firebase configuration and initialization (same as before)
+
+        const db = firebase.firestore();
+
+        // Fetch and display products
+        const productGrid = document.getElementById('productGrid');
+
+        db.collection('products').orderBy('timestamp', 'desc').get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                const product = doc.data();
+                const productItem = document.createElement('div');
+                productItem.classList.add('product-item');
+
+                productItem.innerHTML = `
+                    <img src="${product.imageURL}" alt="${product.productName}">
+                    <div class="product-info">
+                        <h3>${product.productName}</h3>
+                        <p class="price">$${product.productPrice}</p>
+                        <p>${product.productDescription}</p>
+                        <button class="add-to-cart" data-name="${product.productName}" data-price="${product.productPrice}">Add to Cart</button>
+                    </div>
+                `;
+
+                productGrid.appendChild(productItem);
+            });
+        }).catch((error) => {
+            console.error('Error fetching products:', error);
+        });
+
+        const productsSection = document.querySelector('.product-grid');
+
+// Fetch products from Firestore
+db.collection('products').orderBy('timestamp', 'desc').get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        const product = doc.data();
+
+        const productItem = document.createElement('div');
+        productItem.classList.add('product-item');
+
+        const productImage = document.createElement('img');
+        productImage.src = product.imageUrl;
+        productImage.alt = product.productName;
+
+        const productInfo = document.createElement('div');
+        productInfo.classList.add('product-info');
+
+        productInfo.innerHTML = `
+            <h3>${product.productName}</h3>
+            <p class="price">$${product.productPrice}</p>
+            <p>${product.productDescription}</p>
+            <button class="add-to-cart" data-name="${product.productName}" data-price="${product.productPrice}">Add to Cart</button>
+        `;
+
+        productItem.appendChild(productImage);
+        productItem.appendChild(productInfo);
+        productsSection.appendChild(productItem);
+    });
+}).catch((error) => {
+    console.error('Error fetching products: ', error);
+});
+    </script>
+
+    <!-- <footer>
+        <button class="btn-exit">
+            <a href="thnx.html" target="_blank">Exit</a>
+        </button>
+    </footer> -->
+
+    <script src="js/BrowseProducts.js"></script>
+</body>
+</html>

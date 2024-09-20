@@ -1,0 +1,50 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DEE5D4; /* Light green background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for the form */
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: #FEF9D9; /* Light yellow background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements styling */
+input, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #D2E0FB; /* Light blue border */
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Button styling */
+button {
+    background-color: #8EACCD; /* Light blue background */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7a9bb3; /* Slightly darker blue on hover */
+}
+
+/* Success message styling */
+.message {
+    font-size: 18px;
+    color: #5cb85c; /* Green color for success message */
+}

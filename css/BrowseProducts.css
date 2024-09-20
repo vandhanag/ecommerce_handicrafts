@@ -1,0 +1,157 @@
+/* Font styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #FEF9D9;
+}
+
+header {
+    background-color: #8EACCD;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-button {
+    background-color: #f5f6f5;
+    color: rgb(7, 3, 3);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #6D8BB4;
+}
+
+.home-button a {
+    color: rgb(8, 6, 6);
+    text-decoration: none;
+}
+
+.cart-summary {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.hero {
+    background-color: #DEE5D4;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+}
+
+.products {
+    padding: 2rem 2rem;
+    background-color: #D2E0FB;
+}
+
+.products h2 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-family: 'Lora', serif;
+    margin: 0 0 0.5rem;
+}
+
+.product-info .price {
+    font-size: 1.2rem;
+    color: #8EACCD;
+    margin: 0.5rem 0;
+}
+
+.product-info .ratings {
+    font-size: 1rem;
+    color: #FFD700;
+    margin: 0.5rem 0;
+}
+
+.product-info p {
+    font-size: 0.9rem;
+    margin: 0 0 1rem;
+}
+
+.add-to-cart {
+    background-color: #8EACCD;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #6D8BB4;
+}
+
+footer {
+    background-color: #8EACCD;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.btn-exit a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #D2E0FB;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.view-addedprdt-button{
+    background-color: #8EACCD;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #6D8BB4;
+}

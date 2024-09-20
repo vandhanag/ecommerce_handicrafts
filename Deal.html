@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Deals</title>
+    <link rel="stylesheet" href="css/Deal.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Handicrafts E-Commerce</h1>
+            <nav>
+                <a href="LandingPage.html" class="nav-link">Home</a>
+                <a href="BuyerLanding.html" class="nav-link">Buy</a>
+                <a href="SellerLanding.html" class="nav-link">Sell</a>
+                <a href="#contact-us" class="nav-link">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Exclusive Deals Just for You!</h2>
+            <p>Check out our latest deals and offers on various categories. Don't miss out on these amazing discounts!</p>
+        </div>
+    </section>
+
+    <section class="deals">
+        <div class="deal-grid">
+            <div class="deal-item">
+                <img src="images/deal1.jpeg" alt="Deal 1">
+                <h3>Big Discounts on Electronics</h3>
+                <p>Save up to 40% on the latest electronics. Limited time offer!</p>
+            </div>
+            <div class="deal-item">
+                <img src="images/deal2.jpg" alt="Deal 2">
+                <h3>Fashion Sale - 50% Off</h3>
+                <p>Get the trendiest fashion items at half price. Shop now and update your wardrobe!</p>
+            </div>
+            <div class="deal-item">
+                <img src="images/deal3.jpeg" alt="Deal 3">
+                <h3>Home & Furniture Offers</h3>
+                <p>Transform your home with our special offers on furniture and decor. Big savings await!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="contact-us">
+        <h2>Contact Us</h2>
+        <form action="/submit_query" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Handicrafts E-Commerce. All rights reserved.</p>
+    </footer>
+</body>
+</html>

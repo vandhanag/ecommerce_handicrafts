@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Handicrafts E-commerce Landing Page</title>
+        <link rel="stylesheet" href="css/LandingPage.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap">
+    </head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>MosaicMakers</h1>
+            <nav>
+                <a href="#about-us">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+                <a href="BuyerLanding.html" class="button">Buy</a>
+                <a href="SellerLanding.html" class="button">Sell</a>
+                <a href="Deal.html" class="button">Deal</a>
+                <a href="Query.html" class="button">Query</a>
+                <a href="BrowseProducts.html" class="button">Browse Products</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover Unique Handicrafts</h2>
+            <p>Explore a wide range of handcrafted items from artisans around the world. Your journey to beautiful, unique handicrafts begins here.</p>
+            <a href="BuyerLanding.html" class="button">Start Shopping</a>
+        </div>
+    </section>
+
+    <section class="promotional-banner">
+        <p>Exclusive Offer! Get 20% off on your first purchase. Use code: HANDICRAFT20</p>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/product1.jpg" alt="Handcrafted Vase">
+                <h3>Handcrafted Vase</h3>
+                <p>Beautifully handcrafted vase made from recycled materials.</p>
+                <a href="#" class="button">View Details</a>
+            </div>
+            <div class="product-item">
+                <img src="images/product2.jpg" alt="Wooden Sculpture">
+                <h3>Wooden Sculpture</h3>
+                <p>Exquisite wooden sculpture with intricate carvings.</p>
+                <a href="#" class="button">View Details</a>
+            </div>
+            <div class="product-item">
+                <img src="images/product3.jpg" alt="Handwoven Rug">
+                <h3>Handwoven Rug</h3>
+                <p>Elegant handwoven rug with traditional designs.</p>
+                <a href="#" class="button">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-item">
+                <p>"The products are amazing! I love the quality and craftsmanship."</p>
+                <h4>- Sarah L.</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"A wonderful place to find unique gifts. Highly recommended!"</p>
+                <h4>- Michael K.</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"Excellent customer service and beautiful items. Will shop again."</p>
+                <h4>- Emily R.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+        <form action="/subscribe" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="submit-btn">Subscribe</button>
+        </form>
+    </section>
+
+    <section id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="images/about-us.jpeg" alt="About Us Image" class="about-image">
+            <p>We are passionate about bringing you the finest handcrafted products from talented artisans. Our platform is dedicated to promoting traditional arts and crafts while supporting local communities.</p>
+        </div>
+    </section>    
+
+    <section id="contact-us" class="contact-us">
+        <h2>Contact Us</h2>
+        <form action="/submit_query" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- <footer>
+        <button class="btn-exit">
+            <a href="thnx.html" target="_blank">Exit</a>
+        </button>
+    </footer> -->
+</body>
+</html>

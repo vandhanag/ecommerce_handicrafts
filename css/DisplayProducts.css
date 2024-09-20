@@ -1,0 +1,140 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DEE5D4; /* Light green background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for the products list */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: #FEF9D9; /* Light yellow background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search and Sort Section */
+.search-sort {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-sort input,
+.search-sort select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #D2E0FB; /* Light blue border */
+    font-size: 16px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.search-sort select {
+    max-width: 200px;
+}
+
+/* Product items styling */
+.product {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #FFFFFF; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info input,
+.product-info textarea {
+    margin-bottom: 10px;
+    border: 1px solid #D2E0FB; /* Light blue border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #8EACCD; /* Light blue background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.button:hover {
+    background-color: #7a9bb3; /* Slightly darker blue on hover */
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #FEF9D9; /* Light yellow background */
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
