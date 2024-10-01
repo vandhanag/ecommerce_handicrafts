@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Seller Login</title>
+	<link rel="stylesheet" href="slogin.css">
+<div class="login-box">
+  <h2>Seller Login</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" id="username" name="" required="">
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input type="password" id="password" name="" required="">
+      <label>Password</label>
+    </div>
+    <a  id="submit">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      login
+    </a>
+    <a href="sellerreg.html" target="_blank">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      register
+    </a>
+     
+      
+  </form>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+    import {getDatabase, ref, get, set, child, update, remove} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
+  
+    
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDbU8hLpEYNIABROjHGQ7vsyAnkY0tfLYQ",
+      authDomain: "login-49b40.firebaseapp.com",
+      databaseURL: "https://login-49b40-default-rtdb.firebaseio.com",
+      projectId: "login-49b40",
+      storageBucket: "login-49b40.appspot.com",
+      messagingSenderId: "386150783647",
+      appId: "1:386150783647:web:47084648b0a8d99529a0aa",
+      measurementId: "G-2ZTDJFR1E7"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+      const db = getDatabase();
+   
+     var seller = document.getElementById("seller");
+     var password = document.getElementById("password");
+  
+     var submit = document.getElementById("submit");
+  
+  
+     function insertData(){ 
+      const dbr = ref(db);
+  get(child(dbr,"sellerreg/"+username.value)).then((snapshot)=>{
+        if(snapshot.exists()){
+          if(username.value == snapshot.val().Name && password.value == snapshot.val().Password){
+            window.location.href="sellgetvalue.html";
+            alert("Success!");
+          }
+          else{
+            alert("NO USER FOUND");
+          }
+  
+        }
+        else{
+          alert("NO USER FOUND");
+        }
+      }).catch((error)=>{
+        alert("Unsccuessful !"+error);
+      })
+  }
+   
+   submit.addEventListener("click",insertData);
+   </script>
+</div>
+</head>
+</html>
